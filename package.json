@@ -1,0 +1,17 @@
+{
+  "name": "heos-ytcast",
+  "description": "YouTube / YouTube Music cast receiver bridge for HEOS speakers",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.10"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "yt-cast-receiver": "^2.1.0"
+  }
+}

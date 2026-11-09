@@ -1,0 +1,13 @@
+services:
+  heos-ytcast:
+    build: .
+    image: heos-ytcast
+    container_name: heos-ytcast
+    # Required: the YouTube apps find the receiver via SSDP multicast (DIAL).
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      HEOS_HOST: 192.168.1.62
+      # DEVICE_NAME: HEOS Küche
+    volumes:
+      - /mnt/user/appdata/heos-ytcast:/data
